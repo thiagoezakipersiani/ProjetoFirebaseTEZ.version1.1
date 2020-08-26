@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ExtraText,MissingConstraints"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CadastroActivity">
+
+    <LinearLayout
+            android:id="@+id/Linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" android:layout_gravity="">
+
+
+        <EditText
+            android:id="@+id/editEmailCadastro"
+            android:layout_width="379dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#000"
+            tools:ignore="DuplicateIds"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="255dp" />
+
+        <EditText
+            android:id="@+id/editNomeCadastro"
+            android:layout_width="379dp"
+            android:layout_height="45dp"
+            android:layout_margin="8dp"
+            android:ems="10"
+            android:hint="Nome"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColorHint="#000"
+            tools:ignore="DuplicateIds"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="55dp" />
+
+        <EditText
+            android:id="@+id/editApelidoCadastro"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:ems="10"
+            android:hint="Apelido"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColorHint="#000"
+            tools:ignore="DuplicateIds"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="150dp" />
+
+
+        <EditText
+            android:id="@+id/editCelularCadastro"
+            android:layout_width="379dp"
+            android:layout_height="45dp"
+            android:layout_margin="8dp"
+            android:ems="10"
+            android:hint="Celular"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColorHint="#000"
+            tools:ignore="DuplicateIds"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="150dp" />
+
+
+        <TextView
+            android:id="@+id/textViewPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Tipo Perfil"
+            android:textAlignment="center"
+            android:textColor="#B027313A"
+            tools:layout_editor_absoluteX="160dp"
+            tools:layout_editor_absoluteY="560dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButtonBandaAtualizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Banda" />
+
+            <RadioButton
+                android:id="@+id/radioButtonUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Usuário" />
+
+            <RadioButton
+                android:id="@+id/radioButtonMusicoAtualizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Músico" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editSenhaCadastro"
+            android:layout_width="371dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textColorHint="#000" />
+
+        <Button
+            android:id="@+id/buttonCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF"
+            android:text="Registrar"
+            android:textColor="#F44336"
+            android:textColorHint="#FFF"
+            android:textColorLink="#FFF" />
+
+        <ProgressBar
+            android:id="@+id/progressBarCadastro"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    </ScrollView>
+

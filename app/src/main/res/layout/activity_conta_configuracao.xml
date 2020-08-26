@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ExtraText,MissingConstraints"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.ContaConfiguracaoActivity">
+
+
+        <include layout="@layout/toolbar"></include>
+
+        <LinearLayout
+            android:id="@+id/Linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity=""
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/editEmailAtualizar"
+                android:layout_width="379dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColorHint="#000"
+                tools:ignore="DuplicateIds"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="255dp" />
+
+            <EditText
+                android:id="@+id/editNomeAtualizar"
+                android:layout_width="379dp"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Nome"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColorHint="#000"
+                tools:ignore="DuplicateIds"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="55dp" />
+
+
+            <EditText
+                android:id="@+id/editApelidoAtualizar"
+                android:layout_width="379dp"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Apelido"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColorHint="#000"
+                tools:ignore="DuplicateIds"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="55dp" />
+
+            <ImageView
+                android:id="@+id/imageViewPerfilNovo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/avatar"
+                tools:layout_editor_absoluteX="141dp"
+                tools:layout_editor_absoluteY="408dp"
+                />
+
+            <TextView
+                android:id="@+id/textViewAlterarFoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alterar Foto"
+                android:textAlignment="center"
+                android:textColor="#B027313A"
+                tools:layout_editor_absoluteX="160dp"
+                tools:layout_editor_absoluteY="560dp" />
+
+
+            <EditText
+                android:id="@+id/editCelularAtualizar"
+                android:layout_width="379dp"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Celular"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColorHint="#000"
+                tools:ignore="DuplicateIds"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="150dp" />
+
+
+            <TextView
+                android:id="@+id/textViewPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="Tipo Perfil"
+                android:textAlignment="center"
+                android:textColor="#B027313A"
+                tools:layout_editor_absoluteX="160dp"
+                tools:layout_editor_absoluteY="560dp" />
+
+
+            <RadioGroup
+                android:layout_width="421dp"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioButtonBandaAtualizar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Banda" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonUsuarioAtualizar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Usuário" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonMusicoAtualizar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Músico" />
+
+            </RadioGroup>
+
+
+
+            <EditText
+                android:id="@+id/editSenhaAtualAtualizar"
+                android:layout_width="371dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Senha Atual"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColorHint="#000" />
+
+
+            <EditText
+                android:id="@+id/editNovaSenhaAtualizar"
+                android:layout_width="371dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Nova Senha"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColorHint="#000" />
+
+            <EditText
+                android:id="@+id/editConfirmarSenhaAtualizar"
+                android:layout_width="371dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Confirmar Senha"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColorHint="#000" />
+
+
+
+
+
+
+            <Button
+                android:id="@+id/buttonSalvarAlteracao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#FFFFFF"
+                android:text="Salvar"
+                android:textColor="#F44336"
+                android:textColorHint="#FFF"
+                android:textColorLink="#FFF" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/ic_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"></item>
+
+    <item android:id="@+id/ic_pesquisa"
+        android:icon="@drawable/ic_pesquisa_branco"
+        android:title="Pesquisa"></item>
+
+    <item android:id="@+id/ic_adicionar"
+        android:icon="@drawable/ic_baseline_add_box_24"
+        android:title="Adicionar"></item>
+
+    <item android:id="@+id/ic_notificacao"
+        android:icon="@drawable/ic_baseline_chat_bubble_outline_24"
+        android:title="Notificação"></item>
+
+    <item android:id="@+id/ic_perfil"
+        android:icon="@drawable/ic_perfil_branco_24"
+        android:title="Perfil"></item>
+
+
+
+
+
+
+</menu>

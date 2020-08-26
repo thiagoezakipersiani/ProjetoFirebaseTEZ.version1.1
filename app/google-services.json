@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1054989329167",
+    "firebase_url": "https://fir-tez-7008a.firebaseio.com",
+    "project_id": "fir-tez-7008a",
+    "storage_bucket": "fir-tez-7008a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054989329167:android:6363aab70a6cc8b688547a",
+        "android_client_info": {
+          "package_name": "com.thiagoezaki.projetofirebasetez"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054989329167-k9rqkngrcfiob4smf9ondn4pveui4gi1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCspiE3yLkQ6DJMzF9VF2-D1-MesDyU3N8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054989329167-k9rqkngrcfiob4smf9ondn4pveui4gi1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
