@@ -18,6 +18,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.thiagoezaki.projetofirebasetez.R;
 import com.thiagoezaki.projetofirebasetez.helper.ConfiguracaoFireBase;
 import com.thiagoezaki.projetofirebasetez.model.Usuario;
@@ -134,5 +135,17 @@ public class LoginActivity extends AppCompatActivity {
                 Toast.makeText(LoginActivity.this, "Verifique se o email está correto!", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        FirebaseUser firebaseUser= FirebaseAuth.getInstance().getCurrentUser();
+
+        if (firebaseUser!=null){
+            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            finish();
+        }
     }
 }

@@ -104,7 +104,16 @@
                 android:layout_height="400dp"
                 android:layout_marginTop="0dp"
                 android:scaleType="center"
-                app:srcCompat="@drawable/avatar" />
+                app:srcCompat="@drawable/avatar"
+                android:visibility="gone"/>
+
+            <ProgressBar
+                android:id="@+id/progressBarPostagem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="100dp"
+                android:visibility="visible" />
 
         </LinearLayout>
 

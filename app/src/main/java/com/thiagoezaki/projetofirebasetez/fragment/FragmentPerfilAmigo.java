@@ -125,7 +125,10 @@ public class FragmentPerfilAmigo extends Fragment {
                     return;
                 }
                 usuario = dataSnapshot.getValue(Usuario.class);
-                Glide.with(getContext()).load(usuario.getCaminhoFoto()).into(imageViewAmigo);
+                if (usuario.getCaminhoFoto()!=null){
+                    Glide.with(getContext()).load(usuario.getCaminhoFoto()).into(imageViewAmigo);
+                } else
+                   imageViewAmigo.setImageResource(R.drawable.avatar);
                 apelido.setText(usuario.getApelido().toLowerCase());
                 recuperarPostagens();
                 toolbar.setTitle(usuario.getNome());
@@ -387,8 +390,8 @@ public class FragmentPerfilAmigo extends Fragment {
         hashMap.put("UsuarioId",usuarioFirebase.getUid());
         hashMap.put("texto","Começou a seguir você");
         hashMap.put("postagemId","");
-        hashMap.put("isPostagem", null);
-        hashMap.put("tipoPostagem", null);
+        hashMap.put("isPostagem", "");
+        hashMap.put("tipoPostagem", "");
         databaseReference.push().setValue(hashMap);
     }
 

@@ -219,7 +219,6 @@ public class ContaConfiguracaoActivity extends AppCompatActivity {
         campoCelularCadastro = findViewById(R.id.editCelularAtualizar);
         campoNomeCadastro = findViewById(R.id.editNomeAtualizar);
         campoEmailCadastro = findViewById(R.id.editEmailAtualizar);
-        campoSenhaCadastro = findViewById(R.id.editSenhaAtualAtualizar);
 
         //RadioButton
         campoBanda = findViewById(R.id.radioButtonBandaAtualizar);

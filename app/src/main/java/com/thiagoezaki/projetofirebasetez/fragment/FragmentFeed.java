@@ -19,6 +19,7 @@ import android.view.ViewGroup;
 import android.widget.ProgressBar;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -95,7 +96,8 @@ public class FragmentFeed extends Fragment {
                     listSeguindo.add(snapshot.getKey());
                     String id = snapshot.getKey();
                 }
-
+                FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+                listSeguindo.add(firebaseUser.getUid());
                 verificandoPublicacoes();
 
             }
@@ -117,7 +119,7 @@ public class FragmentFeed extends Fragment {
                 listPostagens.clear();
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     Postagem postagem = snapshot.getValue(Postagem.class);
-                    for (String id : listSeguindo) {
+                    for (String id : listSeguindo)  {
                         if (postagem.getIdUsuario().equals(id)) listPostagens.add(postagem);
                     }
                 }

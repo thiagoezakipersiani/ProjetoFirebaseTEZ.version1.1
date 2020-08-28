@@ -152,46 +152,6 @@
             </RadioGroup>
 
 
-
-            <EditText
-                android:id="@+id/editSenhaAtualAtualizar"
-                android:layout_width="371dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:ems="10"
-                android:hint="Senha Atual"
-                android:inputType="textPassword"
-                android:padding="8dp"
-                android:textColorHint="#000" />
-
-
-            <EditText
-                android:id="@+id/editNovaSenhaAtualizar"
-                android:layout_width="371dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:ems="10"
-                android:hint="Nova Senha"
-                android:inputType="textPassword"
-                android:padding="8dp"
-                android:textColorHint="#000" />
-
-            <EditText
-                android:id="@+id/editConfirmarSenhaAtualizar"
-                android:layout_width="371dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:ems="10"
-                android:hint="Confirmar Senha"
-                android:inputType="textPassword"
-                android:padding="8dp"
-                android:textColorHint="#000" />
-
-
-
-
-
-
             <Button
                 android:id="@+id/buttonSalvarAlteracao"
                 android:layout_width="match_parent"

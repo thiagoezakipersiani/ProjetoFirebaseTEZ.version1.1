@@ -166,8 +166,8 @@ public class AdapterPesquisa extends RecyclerView.Adapter<AdapterPesquisa.MyView
         hashMap.put("UsuarioId",usuarioFirebase.getUid());
         hashMap.put("texto","Começou a seguir você");
         hashMap.put("postagemId","");
-        hashMap.put("isPostagem", "0");
-        hashMap.put("tipoPostagem",null);
+        hashMap.put("isPostagem", "");
+        hashMap.put("tipoPostagem","");
         databaseReference.push().setValue(hashMap);
     }
 

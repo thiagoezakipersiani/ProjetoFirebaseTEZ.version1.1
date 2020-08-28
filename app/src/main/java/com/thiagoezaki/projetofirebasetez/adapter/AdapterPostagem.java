@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -74,7 +75,13 @@ public class AdapterPostagem extends RecyclerView.Adapter<AdapterPostagem.ViewHo
         if (postagem.getTipoPostagem().equals("1")) {
             holder.imageViewPostagem.setVisibility(View.VISIBLE);
             Glide.with(context).load(postagem.getCaminhoPostagem()).into(holder.imageViewPostagem);
-        } else {
+            holder.imageViewPausa.setVisibility(View.GONE);
+            holder.seekBar.setVisibility(View.GONE);
+            holder.nomeMusica.setVisibility(View.GONE);
+            holder.textTotalDuration.setVisibility(View.GONE);
+            holder.progressBar.setVisibility(View.GONE);
+
+        } else if  (postagem.getTipoPostagem().equals("2")) {
 
             final MediaPlayer mediaPlayer = new MediaPlayer();
 
@@ -168,6 +175,7 @@ public class AdapterPostagem extends RecyclerView.Adapter<AdapterPostagem.ViewHo
             holder.seekBar.setVisibility(View.VISIBLE);
             holder.nomeMusica.setVisibility(View.VISIBLE);
             holder.textTotalDuration.setVisibility(View.VISIBLE);
+            holder.progressBar.setVisibility(View.GONE);
         }
 
         if (postagem.getDescricao().equals("")) {
@@ -290,9 +298,10 @@ public class AdapterPostagem extends RecyclerView.Adapter<AdapterPostagem.ViewHo
         public ImageView imageViewPostagem, imageViewCurtida, imageViewComentario, imageViewPausa;
 
         private TextView comentarios, descricao, nomePerfil, curtidas, nomeMusica, textTotalDuration;
-        ;
+
         private CircleImageView imagemPerfil;
         private SeekBar seekBar;
+        private ProgressBar progressBar;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -309,7 +318,7 @@ public class AdapterPostagem extends RecyclerView.Adapter<AdapterPostagem.ViewHo
             textTotalDuration = itemView.findViewById(R.id.textViewTotalDuracao);
             nomeMusica = itemView.findViewById(R.id.textViewNomeMusicaPostagem);
             seekBar = itemView.findViewById(R.id.seekBarMusica);
-
+            progressBar = itemView.findViewById(R.id.progressBarPostagem);
         }
     }
 
